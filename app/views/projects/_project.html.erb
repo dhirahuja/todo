@@ -1,0 +1,26 @@
+ <p>
+        <strong>Name:</strong>
+        <%= project.name %>
+      </p>
+     
+      <p>
+        <strong>Number:</strong>
+        <%= project.number %>
+      </p>
+      <p>
+        <strong>Department:</strong>
+        <%= project.department %>
+      </p>
+      <p>
+        <strong>State:</strong>
+        <%= project.state %>
+      </p>
+      <p>
+        <strong>Address:</strong>
+        <%= project.address %>
+      </p>
+      <p>
+  <%= link_to 'Delete User', [project.plum, project],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

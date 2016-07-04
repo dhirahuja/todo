@@ -1,0 +1,29 @@
+<h1>Company Details</h1>
+<p>
+<strong>Name</strong>
+<%= @plum.name %>
+</p>
+<p>
+<strong>Address</strong>
+<%= @plum.address %>
+</p>
+<p>
+<strong>City</strong>
+<%= @plum.city %>
+</p>
+<p>
+<strong>Country</strong>
+<%= @plum.country %>
+</p>
+<p>
+<strong>Phone</strong>
+<%= @plum.phone %>
+</p>
+    <h2>Users</h2>
+    <%= render @plum.projects %>
+
+      <h2>Add a user:</h2>
+      <%= render 'projects/form' %>
+  
+<%= link_to 'Edit', edit_plum_path(@plum) %> |
+<%= link_to 'Back', plums_path %>
